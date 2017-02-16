@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "SublimeREPL: Nasl - RUN current file",
+        "command": "run_existing_window_command", "args":
+        {
+            "id": "repl_nasl_run",
+            "file": "config/Nasl/Main.sublime-menu"
+        }
+    }
+]

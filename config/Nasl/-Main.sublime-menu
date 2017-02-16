@@ -1,0 +1,33 @@
+[
+     {
+        "id": "tools",
+        "children":
+        [{
+            "caption": "SublimeREPL",
+            "mnemonic": "R",
+            "id": "SublimeREPL",
+            "children":
+            [
+                {"caption": "Nasl",
+                "id": "Nasl",
+
+                 "children":[
+                    {"command": "repl_open",
+                     "caption": "Nasl - RUN current file",
+                     "id": "repl_nasl_run",
+                     "mnemonic": "R",
+                     "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["nasl",  "$file_basename"],
+                        "cwd": "$file_path",
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        "external_id": "python",
+                        "extend_env": {"PYTHONIOENCODING": "utf-8"}
+                        }
+                    },
+                ]}
+            ]
+        }]
+    }
+]
